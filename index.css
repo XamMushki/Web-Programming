@@ -1,6 +1,11 @@
 body {
     background-color: burlywood;
 }
+h1 {
+    font-size: 30px;
+    color: crimson;
+    margin-left: -80px;
+}
 
 #main_div {
     /* width: 90%; */
@@ -49,10 +54,6 @@ body {
     border-color: red;
 } */
 
-h1 {
-    font-size: 30px;
-    color: crimson;
-}
 
 .inner_labels {
     font-size: 13px;
