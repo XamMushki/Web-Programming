@@ -1,0 +1,78 @@
+body{
+    background-color: burlywood;
+}
+#main_div{
+    /* width: 90%; */
+    min-height: 300px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 3px solid blueviolet;
+
+}
+#second_div{
+    padding:10px;
+
+    
+}
+.labels{
+    font-size: 13px;
+    color:blueviolet;
+}
+.fields{
+    border-radius: 5px;
+    height: 20px;
+    border:2px solid white;
+    padding: 4px;
+    margin-bottom: 7px;
+    width: 100%;
+    /* removes default browser border color */
+    outline: 0;
+}
+.fields:hover{
+    border-color:darkgrey;
+}
+.fields:focus{
+    /* border-color: blueviolet red yellow green; */
+    border-color: blueviolet;
+}
+/* .fields:invalid{
+    border-color: red;
+} */
+
+h1{
+    font-size: 30px;
+    color: crimson;
+}
+
+.inner_labels{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.btn_submit{
+    font-size: 30px;    
+    width:100%;
+    margin-left: 5px;
+    height: 40px;
+    color:blueviolet;
+    font-weight: 800;
+    background-color:#90EE90;
+    border-radius: 15px;
+    border: 3px solid blueviolet;
+    cursor: pointer;
+    text-align: center;
+
+    /* transition-duration: 0.4s;
+    overflow: hidden; */
+}
+
+.btn_submit:hover{
+    border-color: yellow green red cyan;
+    color:crimson
+}
+
+.btn_submit:active{
+
+}

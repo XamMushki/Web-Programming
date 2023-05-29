@@ -3,12 +3,55 @@
 
 <head>
     <title>
-        HTML Form
+        SignUp Form
     </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <p>Hello World!!!</p>
+    <div id="main_div">
+        <div id="second_div">
+            <p>
+            <h1>Sign Up</h1>
+            </p>
+            <form>
+                <label class="labels">* First Name </label><br>
+                <input class="fields" type="text" placeholder="First Name" required><br>
+                
+                <label class="labels">* Last Name</label><br>
+                <input class="fields" type="text" placeholder="Last Name" required><br>
+                
+                <label class="labels">Email Id</label><br>
+                <input class="fields" type="text" placeholder="example@mail.com"><br>
+                
+                <label class="labels">* Phone Number</label><br>
+                <input class="fields number_field" type="tel" placeholder="7006000000" pattern="[0-9]{10}" required><br>
+
+                <label class="labels">* D.O.B</label><br>
+                <input class="fields" type="date" required><br>
+
+                <label class="labels">* Gender: </label> 
+                <input type="radio" name="gender" value="male" required>
+                <label class="inner_labels">Male</label>
+                <input type="radio" name="gender" value="female" required>
+                <label class="inner_labels">Female</label><br><br>
+
+                <label class="labels">Qualification: </label>
+                <input type="checkbox" name="qualification" value="bca">
+                <label class="inner_labels">BCA</label>
+                <input type="checkbox" name="qualification" value="mca">
+                <label class="inner_labels">MCA</label><br><br>
+
+                <input type="checkbox" name="tandc" value="yes" required>
+                <label class="inner_labels">I agree to the <a href=tandc.html>terms and conditions</a>.</label><br><br>
+
+                <input class="btn_submit" type="submit" value="SUBMIT">
+
+                
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
