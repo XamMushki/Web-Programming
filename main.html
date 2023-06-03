@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Details Form
+    </title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="main_div">
+        <div id="second_div">
+            <p>
+            <h1>Student Details</h1>
+            </p>
+            <form onsubmit="return false">
+                <label class="labels">* First Name </label><br>
+                <input class="fields" type="text" placeholder="First Name" required id="input_fname"><br>
+
+                <label class="labels">* Last Name</label><br>
+                <input class="fields" type="text" placeholder="Last Name" id="input_lname" required><br>
+
+                <label class="labels">* Address</label><br>
+                <input class="fields" type="text" placeholder="e.g, Anantnag" required id="input_address"><br>
+
+                <label class="labels">Email Id</label><br>
+                <input class="fields" type="text" placeholder="example@mail.com" id="input_email" required><br>
+
+                <label class="labels">* Phone Number</label><br>
+                <input class="fields number_field" type="tel" placeholder="7006000000" id="input_phone"
+                    pattern="[0-9]{10}" required><br>
+
+                <label class="labels">* D.O.B</label><br>
+                <input class="fields" type="date" required id="input_dob"><br>
+
+                <label class="labels">* Gender: </label>
+                <input type="radio" name="gender" value="Male" required>
+                <label class="inner_labels">Male</label>
+                <input type="radio" name="gender" value="Female" required>
+                <label class="inner_labels">Female</label><br><br>
+
+                <label class="labels">Qualification: </label>
+                <input type="checkbox" name="qualification" value="BCA">
+                <label class="inner_labels">BCA</label>
+                <input type="checkbox" name="qualification" value="MCA">
+                <label class="inner_labels">MCA</label><br><br>
+
+                <input type="checkbox" name="tandc" value="yes" required>
+                <label class="inner_labels">I agree to the <a href=tandc.html>terms and conditions</a>.</label><br><br>
+
+                <input class="btn_submit" type="submit" value="SUBMIT" onclick="submitDetails()">
+            </form>
+        </div>
+    </div>
+    <div id="table_div">
+        <div id="inner_div_table">
+            <table id="data_table">
+                <tr>
+                    <th>S.No.</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email Id</th>
+                    <th>Phone No.</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Qual.</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
