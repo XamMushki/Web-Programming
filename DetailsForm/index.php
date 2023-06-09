@@ -75,7 +75,7 @@
                 {
                     $server_name = "localhost";
                     $username = "root";
-                    $password = "snowflake";
+                    $password = "";
                     $dbname = "StudentRegistration";
                     $conn = new mysqli($server_name, $username, $password, $dbname);
                     if ($conn->connect_error) {
@@ -93,7 +93,7 @@
                 {
                     $server_name = "localhost";
                     $username = "root";
-                    $password = "snowflake";
+                    $password = "";
                     $dbname = "StudentRegistration";
                     $conn = new mysqli($server_name, $username, $password, $dbname);
                     if ($conn->connect_error) {
